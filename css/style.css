@@ -8,12 +8,6 @@
     text-decoration: none;
     font-family:Roboto, sans-serif;
 }
-
-.container-fluid{
-    border: #00fc3b;
-    color: #195d29;
-}
-
 h1{
     font-size: 30px;
     text-align: center;
@@ -21,6 +15,7 @@ h1{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 section{
     width: 100vw;
     height: 100vh;
