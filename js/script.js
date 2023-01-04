@@ -6,12 +6,12 @@ if (seguro) {
 }
 
 function convertir() {
-    var valor = parseFloat(document.getElementById("cantidad").value);
+    let valor = parseFloat(document.getElementById("cantidad").value);
     document.getElementById("valor").innerHTML="<b>"+valor+"</b>";
     de=document.getElementById("de").value;
     a=document.getElementById("a").value;
-    var dolar=178.36;
-    var euro=188.30;
+    let dolar=178.36;
+    let euro=188.30;
     resultado=0;
     // peso a Dolar
     if(de==1&&a==2){
