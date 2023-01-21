@@ -115,6 +115,13 @@ select{
 }
 
 /* FORMULARIO */
+.titulo_form{
+    margin: auto;
+    text-align: center;
+    padding-top: 4rem;
+    color: #06b649;
+    
+}
 .formulario {
     width: 100px;
     max-width: 100%;
@@ -128,6 +135,7 @@ select{
     align-items: center;
     font-size: 20px;
     color: #ffffff;
+
         }
         
     form {
@@ -148,6 +156,7 @@ select{
 
         form input[type=submit] {
             margin-top: 20px;
+            background:#06b649;
         }
             
     form .btn {
@@ -165,7 +174,8 @@ select{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        margin-top: 1em;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
     
     }
     .fas {
