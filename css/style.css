@@ -254,14 +254,13 @@ select{
             margin-top: 20px;
         }
         form input::placeholder {
-            width: 90%;
+            width: 100%;
             margin-top: 1rem;
             padding: 25px;
             padding-top: 1rem;
             padding-bottom: 1rem;
     
             }
-           
         }
 
     
@@ -317,10 +316,10 @@ select{
         font-size: 30px;
     }
     .form-newsletter form input:first-child {
-        max-width: 300px;  
+        max-width: 500px;  
     }
     .form-newsletter form input[type=submit]{
-    font-size: 12px;
+        font-size: 18px;
     }
     }
 
