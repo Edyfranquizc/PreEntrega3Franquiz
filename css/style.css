@@ -15,7 +15,12 @@ h1{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
+.navbar{
+    width: 100vw;
+    padding: 10px;
+    padding-left:10px;
+    padding-right: 20px;
+}
 section{
     width: 100vw;
     height: 100vh;
@@ -40,7 +45,7 @@ section{
     border: 5px solid #02b245;
 }
 input{
-    width: 20vw;
+    width: 25vw;
     border: 3px solid #02b245;
 }
 select{ 
@@ -57,6 +62,32 @@ select{
     font-weight: 600;
     color: #ffffff;
     text-align: center;
+}
+
+@media screen and (max-width: 1500px){
+    input{
+        width:35vw;
+
+    }
+    select{ 
+        width: 25vw;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .simulador{
+        width: 90vw;
+        height: 90vh;
+    }
+    input{
+        width: 80vw;
+    }
+    select{ 
+        width: 30vw;
+        padding: 10px;
+    }
+    
 }
 
 /* Buscador*/
@@ -210,6 +241,28 @@ select{
     .green {
             color: #00a088;
     }
+
+    @media screen and (max-width: 600px){
+        .formulario  {
+            width: 1000px;
+            max-width: 100%;
+            font-size: 20px;
+        }
+        form {
+            text-align: center;
+            width: 80vw;
+            margin-top: 20px;
+        }
+        form input::placeholder {
+            width: 90%;
+            margin-top: 1rem;
+            padding: 25px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+    
+            }
+           
+        }
 
     
 /* NEWSLETTER-FOOTER */

@@ -5,45 +5,8 @@ if (seguro) {
     alert (`Hola ${nombre}!`);
 }
 
-// En progreso 
-/*document.addEventListener("keyup", e=>{
 
-    if (e.target.matches("#buscador")){
-
-        if (e.key ==="Escape")e.target.value = ""
-
-        document.querySelectorAll(".nav-link").forEach(lista =>{
-
-            lista.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-            ?lista.classList.remove("filtro")
-            :lista.classList.add("filtro")
-        })
-    }
-
-
-})
-
-
-// //Funcion para mostrar el buscador
-function mostrar_buscador(){
-
-    bars_search.style.top = "80px";
-    cover_ctn_search.style.display = "block";
-    inputSearch.focus();
-
-}
-
-//Funcion para ocultar el buscador
-function ocultar_buscador(){
-
-    bars_search.style.top = "-10px";
-    cover_ctn_search.style.display = "none";
-    inputSearch.value = "";
-
-}*/
-
-
-//Funcion para convertir las divisas
+// Funcion para convertir las divisas
 function convertir() {
     let valor = parseFloat(document.getElementById("cantidad").value);
     document.getElementById("valor").innerHTML="<b>"+valor+"</b>";
