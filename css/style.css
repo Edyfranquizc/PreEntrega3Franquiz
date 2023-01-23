@@ -71,7 +71,7 @@ select{
     }
     select{ 
         width: 25vw;
-        padding: 10px;
+        padding: 5px;
     }
 }
 
@@ -93,6 +93,21 @@ select{
 /* Buscador*/
 .filtro{
     display: none;
+}
+
+#buscador{
+ width: 35vw;
+}
+.btn-btn {
+    width: 35vw;
+    height: 50px;
+    text-transform: uppercase;
+    background:#04963c;
+    color:rgb(255, 255, 255);
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 /*Portada*/
@@ -190,9 +205,9 @@ select{
             background:#06b649;
         }
             
-    form .btn {
-            width: 60%;
-            height: 50px;
+    form .btn-btn2 {
+            width: 15vw;
+            height: 40px;
             text-transform: uppercase;
             background:#04963c;
             color:rgb(255, 255, 255);
@@ -261,7 +276,17 @@ select{
             padding-bottom: 1rem;
     
             }
+            form .btn-btn2 {
+                width: 30vw;
+                height: 40px;
+            }
         }
+        @media screen and (max-width: 1500px){
+                form .btn-btn2 {
+                    width: 35vw;
+                    height: 40px;
+                }
+            }
 
     
 /* NEWSLETTER-FOOTER */
@@ -307,7 +332,7 @@ select{
     color: white;
     padding: 10px 30px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     border: none;
     border-radius: 4px;
     }
