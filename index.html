@@ -27,10 +27,18 @@
                     <a class="nav-link active" href="./index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#planifica">PLANIFICA</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#blog">BLOG</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#planifica" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PLANIFICA TU VIAJE 
+                    </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/simulador.html">Conversor de Divisas</a></li>
+                    <li><a class="dropdown-item" href="#planifica">Calcula tu viaje</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Seguro de Viaje</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#container__footer">CONTACTO</a>
@@ -43,29 +51,15 @@
             </div>
             </div>
         </nav>
-    <section>
-        <div class="simulador">
-            <h1>Convertidor de Divisas</h1> 
-        Cantidad: <input type="range" id="cantidad" min="1" max="10000" value="0" onchange="convertir()"> 
-            <span id="valor">0</span>
-            <br>
-            Convertir De:
-            <select id="de" onchange="convertir()">
-                <option value="1">Pesos</option>
-                <option value="2">Dolar</option>
-                <option value="3">Euros</option>
-            </select>
-            <br>
-            Convertir A :
-            <select id="a" onchange="convertir()">
-                <option value="1">Pesos</option>
-                <option value="2">Dolar</option>
-                <option value="3">Euros</option>
-            </select><br>
-            <h1 id="resultado">Resulatado $0.00</h1>
-        </div>
-        
+        <!-- BANNER -->
+        <section class="banner">
+        <div class="banner-content" data-aos="fade-up"data-aos-duration="1200">
+            <!-- <h1 class="banner-titulo"> BIENVENIDOS VIAJEROS<br>">
+            </h1> -->
+            <!-- <a href="./pages/shop.html"><b> Ir aL BLOG</b></a>
+            </div> -->
         </section>
+
     
         <!--Portada-->
     
@@ -74,16 +68,96 @@
         
         <div id="blog" class="blog-container-cover">
             <div class="container-info-cover">
-                <h1>¡Encuentra tu tema de interes!</h1>
+                <h1>¡Encuentra Tú Proximo Destino!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam quis fuga beatae blanditiis assumenda.</p>
             </div>
         </div>
+        
+    <!-- cards -->
+    <div id="destinos">
+        <div class="container__cards">
+            <div class="card">
+                <div class="cover">
+                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19765877/image/medium-902fc28801f1db1153bc0e7d130948f1.jpg" alt="">
+            
+                </div>
+                <div class="description">
+                    <h2>BUENOS AIRES</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="cover">
+                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19785048/image/medium-4600aaca5214459afb4af69201fcd7b8.jpg" alt="">
+                
+                </div>
+                <div class="description">
+                    <h2>MENDOZA</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="cover">
+                    <img src="https://static.wixstatic.com/media/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg/v1/fill/w_250,h_233,al_c,q_90,enc_auto/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg" alt="">
+        
+                </div>
+                <div class="description">
+                    <h2>PATAGONIA</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19765877/image/medium-902fc28801f1db1153bc0e7d130948f1.jpg" alt="">
+            
+                </div>
+                <div class="description">
+                    <h2>JUJUY</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="cover">
+                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19785048/image/medium-4600aaca5214459afb4af69201fcd7b8.jpg" alt="">
+                
+                </div>
+                <div class="description">
+                    <h2>SALTA</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="cover">
+                    <img src="https://static.wixstatic.com/media/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg/v1/fill/w_250,h_233,al_c,q_90,enc_auto/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg" alt="">
+        
+                </div>
+                <div class="description">
+                    <h2> IGUAZÚ </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+    
+        </div>
+    </div>
 
 <!-- Calculadora de gastos de viaje -->
+        
         <div id="planifica" class="titulo_form">
+            <hr>
             <h1>Calcula tu Viaje</h1>
         </div>
-            <div class="formulario">
+            <div id="formulario">
                     <form id="vacationCalc">
                         <input type="text" placeholder="Destiny (Destino)" id="destiny" required />
                         <input type="number" placeholder="Budget (Presupuesto)" id="budget" required />

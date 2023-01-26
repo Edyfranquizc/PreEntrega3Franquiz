@@ -112,3 +112,6 @@ vacationCalc.addEventListener('submit', calcExpenses)
         document.getElementById('balance').classList.add('green')
         }657
     }
+localStorage.setItem(cursoCoder,"48557")
+localStorage.setItem(comidaFavorita,"hamburguesa")
+

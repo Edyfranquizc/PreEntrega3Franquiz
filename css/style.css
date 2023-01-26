@@ -32,7 +32,7 @@ section{
     background-size: cover;
     
 }
-.simulador{
+#simulador{
     width: 80vw;
     height: 80vh;
     display: flex;
@@ -48,6 +48,7 @@ input{
     width: 25vw;
     border: 3px solid #02b245;
 }
+
 select{ 
     width: 20vw;
     padding: 10px;
@@ -81,7 +82,7 @@ select{
         height: 90vh;
     }
     input{
-        width: 80vw;
+        width: 60vw;
     }
     select{ 
         width: 30vw;
@@ -96,7 +97,7 @@ select{
 }
 
 #buscador{
- width: 35vw;
+width: 35vw;
 }
 .btn-btn {
     width: 35vw;
@@ -109,10 +110,76 @@ select{
     border: none;
     cursor: pointer;
 }
+.btn-btn [type=submit]:hover{
+    background-color: #00fc3b;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(121, 197, 167, 0.701);
+    background-size: cover;
+    background-position: center center;
+    background-image: url("https://media.traveler.es/photos/6137759e6936668f30c3f542/master/pass/112126.jpg");
+    }
+    
+    .banner-content {
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: rgba(45, 45, 45, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .banner-content .banner-titulo {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+    font-size: 70px;
+    text-align: center;
+    color: #fff9f3;
+    }
+    
+    /* .banner-content a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(27, 134, 11, 0.864);
+    padding: 20px;
+    border-radius: 45px;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    }
+    
+    .banner-content a:hover {
+    background-color: #FFF8EA;
+    color: #402E32;
+    }
+    
+    .cafe {
+    color: #ff9c4a;
+    font-size: 90px;
+    border-radius: 5px;
+    } */
+    @media screen and (max-width: 600px) {
+    .banner-content .banner-titulo {
+        font-size: 50px;
+    }
+    .cafe {
+        font-size: 70px;
+    }
+    }
+
 
 /*Portada*/
-
-
 .blog-container-cover{
     width: 100%;
     height: 500px;
@@ -160,19 +227,111 @@ select{
     font-weight: 300;
 }
 
+.container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARD */
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    width: 10vw;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #35a66f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input[type=button]:hover{
+
+    background: #1bd0ca;
+
+}
+
 /* FORMULARIO */
 .titulo_form{
     margin: auto;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
     color: #06b649;
     
 }
-.formulario {
+hr{
+    height: 1px;
+    margin: 100px;
+    border: none;
+    background-color: #000000;
+}
+
+#formulario {
     width: 100px;
     max-width: 100%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 1rem;
     padding: 20px;
 
     display: flex;
@@ -190,7 +349,7 @@ select{
             margin-top: 20px;
         }
 
-    form input::placeholder {
+    form input::placeholder{
         width: 90vh;
         margin: auto;
         padding: 50px;
@@ -200,22 +359,23 @@ select{
 
         }
 
-        form input[type=submit] {
+        form input[type=submit]{
             margin-top: 20px;
-            background:#06b649;
+            background-color:#04963c;
+
         }
             
     form .btn-btn2 {
             width: 15vw;
             height: 40px;
             text-transform: uppercase;
-            background:#04963c;
             color:rgb(255, 255, 255);
             letter-spacing: 2px;
             border-radius: 5px;
             border: none;
             cursor: pointer;
         }
+
     .icons {
         width: 100%;
         display: flex;
