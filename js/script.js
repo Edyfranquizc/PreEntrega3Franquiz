@@ -1,10 +1,45 @@
-alert ('BIENVENIDO!!');
-const seguro = confirm ('Deseas que te salude por tu nombre');
-if (seguro) {
-    const nombre = prompt ('Cuál es tu nombre?');
-    alert (`Hola ${nombre}!`);
-}
+// alert ('BIENVENIDO!!');
+// const seguro = confirm ('Deseas que te salude por tu nombre');
+// if (seguro) {
+//     const nombre = prompt ('Cuál es tu nombre?');
+//     alert (`Hola ${nombre}!`);
+// }
 
+// seweet
+Swal.fire({
+    icon: 'susses',
+    title: 'Bienvenidos',
+    text: 'Happy Jouney!',
+    footer: 'Hoy es un buen día para planificar tú viaje',
+    confirmButtonColor:'#327CB2', 
+})
+
+
+// En progreso 
+// document.addEventListener("keyup", e=>{
+
+//     if (e.target.matches("#buscador")){
+
+//         if (e.key ==="Escape")e.target.value = ""
+
+//         document.querySelectorAll(".description").forEach(lista =>{
+
+//             lista.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+//             ?lista.classList.remove("filtro")
+//             :lista.classList.add("filtro")
+//         })
+//     }
+
+// })
+
+// //Funcion para mostrar el buscador
+// function mostrar_buscador(){
+
+//     bars_search.style.top = "80px";
+//     cover_ctn_search.style.display = "block";
+//     inputSearch.focus();
+
+// }
 
 // Funcion para convertir las divisas
 function convertir() {
@@ -112,6 +147,82 @@ vacationCalc.addEventListener('submit', calcExpenses)
         document.getElementById('balance').classList.add('green')
         }657
     }
-localStorage.setItem(cursoCoder,"48557")
-localStorage.setItem(comidaFavorita,"hamburguesa")
+
+
+
+
+
+// carrito 
+const shopContend = document.getElementById("shopContent");
+const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modalContainer");
+
+
+let carrito =[];
+productos.forEach((product)=> {
+    let content = document.createElement("div");
+    content.className = "card_tienda"
+    content.innerHTML = `
+    <img class="cover" src=${product.img}>
+    <h3 class"description">${product.nombre}</h3>
+    <p class="price">${product.precio} $</p>
+    `;
+
+    shopContend.append(content);
+
+    let comprar = document.createElement("button");
+    comprar.innerText = "comprar";
+    comprar.className = "comprar";
+
+    content.append(comprar);
+
+    comprar.addEventListener("click", () =>{
+        carrito.push({
+        id : product.id,
+        img : product.img,
+        nombre: product.nombre,
+        precio: product.precio,
+        });
+        console.log(carrito);
+    });
+});
+
+verCarrito.addEventListener("click", () => {
+    const modalHeader = document.createElement("div");
+
+    modalHeader.className = "modal-header";
+    modalHeader.innerHTML = `
+    <h1 class="modal-header-title"> Carrito. </h1>
+    `;
+    modalContainer.append(modalHeader);
+
+    const modalbutton = document.createElement("h1");
+    modalbutton.innerText = "x";
+    modalbutton.className = "modal-header-button";
+
+    modalHeader.append(modalbutton);
+
+    carrito.forEach((product) => {
+        let carritoContent = createElement("div");
+        carrito.className = "modal-content"
+        carrito.innerHTML = `
+        <img src="${product.img}">
+        <h3>${product.nombre}</h3>
+        <p>${product.precio} $</p>
+        `;
+
+        modalContainer.append(carritoContent);
+    });
+
+    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    const totalBuying = createElement("div");
+    totalBuying.className = "total-content";
+    totalBuying.innerHTML = `total a pagar: ${total} $
+    modalContainer.append(totalBuying)
+    `;
+
+});
+
+
+
 

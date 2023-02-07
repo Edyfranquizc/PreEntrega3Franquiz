@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%2328244a%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>✈️</text></svg>" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/favicon (12).png"> 
+    <link rel="shortcut icon" href="./assets/favicon (3)logo.svg"> 
     <link rel="stylesheet" href="css/style.css">
-    <title>Simulador Interactivo</title> 
+    <title>
+        Happy Journey
+    </title> 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                     
-            <img src="assets/favicon (12).png" alt="logo.favicon" width="50" height="40">
+            <img src="assets/favicon (3)logo.svg" alt="logo.favicon" width="100" height="70">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,37 +38,38 @@
                     PLANIFICA TU VIAJE 
                     </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/simulador.html">Conversor de Divisas</a></li>
+                    <li><a class="dropdown-item" href="/pages/simulador.html
+                        ">Conversor de Divisas</a></li>
                     <li><a class="dropdown-item" href="#planifica">Calcula tu viaje</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Seguro de Viaje</a></li>
-                    </ul>
-                </li>
+                    <li class="dropdown-divider"></li>
+                </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shopContent">TIENDA</a>
+                    </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#container__footer">CONTACTO</a>
                 </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="text" name="buscador" id="buscador" placeholder="Buscar...">
                 <button class="btn-btn" type="submit">Buscar</button>
-                </form>
+                </form> -->
+                <h1 class="ver-Carrito" id="verCarrito">🛒</h1>
             </div>
             </div>
         </nav>
         <!-- BANNER -->
         <section class="banner">
         <div class="banner-content" data-aos="fade-up"data-aos-duration="1200">
-            <!-- <h1 class="banner-titulo"> BIENVENIDOS VIAJEROS<br>">
-            </h1> -->
-            <!-- <a href="./pages/shop.html"><b> Ir aL BLOG</b></a>
-            </div> -->
+            <h1 class="banner-titulo"> BIENVENIDOS VIAJEROS<br><span class="cafe">Happy Journey!</span>
+            </h1>
+            </div> 
         </section>
 
     
         <!--Portada-->
     
         <div class="container-all" id="move-content">
-    
         
         <div id="blog" class="blog-container-cover">
             <div class="container-info-cover">
@@ -72,84 +77,237 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam quis fuga beatae blanditiis assumenda.</p>
             </div>
         </div>
-        
-    <!-- cards -->
+    
+<!-- Tienda content -->
+    <div class="titulo_tienda"> 
+        <h1> ENCUENTRA TÚ CÁMARA FAVORITA </h1>
+    </div>
+    <div id="shopContent" class="shopContent">    
+    </div>  
+
+    <!-- Modal-carrito -->
+
+    <div id="modalConteiner" class="modal-container">
+    </div>
+    
+    
+    <!-- cards destino -->
     <div id="destinos">
         <div class="container__cards">
             <div class="card">
                 <div class="cover">
-                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19765877/image/medium-902fc28801f1db1153bc0e7d130948f1.jpg" alt="">
-            
+                    <img src="/assets/buenos-aires.jpg" alt="buenos-aires" width="100" height="300">           
                 </div>
                 <div class="description">
                     <h2>BUENOS AIRES</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                    <input type="button" value="Leer Más">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                        Leer Más
+                    </button>
                 </div>
             </div>
     
-            <div class="card">
+            <div class="card" >
                 <div class="cover">
-                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19785048/image/medium-4600aaca5214459afb4af69201fcd7b8.jpg" alt="">
-                
+                    <img src="/assets/mendoza.jpg" alt="mendoza" width="100" height="300">
                 </div>
                 <div class="description">
                     <h2>MENDOZA</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                    <input type="button" value="Leer Más">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        Leer Más
+                    </button>
                 </div>
+                
             </div>
     
             <div class="card">
                 <div class="cover">
-                    <img src="https://static.wixstatic.com/media/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg/v1/fill/w_250,h_233,al_c,q_90,enc_auto/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg" alt="">
-        
+                    <img src="/assets/patagonia.jpg" alt="patagonia" width="100" height="300">
                 </div>
                 <div class="description">
                     <h2>PATAGONIA</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                    <input type="button" value="Leer Más">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" >
+                        Leer Más
+                    </button>
                 </div>
             </div>
 
             <div class="card">
                 <div class="cover">
-                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19765877/image/medium-902fc28801f1db1153bc0e7d130948f1.jpg" alt="">
+                    <img src="/assets/jujuy.jpg" alt="jujuy" width="100"
+                    height="300">
             
                 </div>
                 <div class="description">
                     <h2>JUJUY</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                    <input type="button" value="Leer Más">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4" >
+                        Leer Más
+                    </button>
                 </div>
             </div>
     
             <div class="card">
                 <div class="cover">
-                    <img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/19785048/image/medium-4600aaca5214459afb4af69201fcd7b8.jpg" alt="">
+                    <img src="/assets/salta.jpg" alt="salta" width="100" height="300">
                 
                 </div>
                 <div class="description">
                     <h2>SALTA</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                    <input type="button" value="Leer Más">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" >
+                        Leer Más
+                    </button>
                 </div>
             </div>
     
             <div class="card">
                 <div class="cover">
-                    <img src="https://static.wixstatic.com/media/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg/v1/fill/w_250,h_233,al_c,q_90,enc_auto/66f643_fba82b5caacb4d2692e9d12ee27f2198.jpg" alt="">
+                    <img src="/assets/iguazu.jpg" alt="iguazu" width="100" height="300">
         
                 </div>
                 <div class="description">
                     <h2> IGUAZÚ </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, laboriosam.</p>
-                    <input type="button" value="Leer Más">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop6" >
+                        Leer Más
+                    </button>
                 </div>
             </div>
     
         </div>
     </div>
+<!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">BUENOS AIRES</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>
+                Buenos Aires Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, deleniti dicta nihil repellendus iste commodi, ut similique debitis possimus dolore ducimus nesciunt obcaecati, doloremque magni dolores repellat nisi reiciendis inventore.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cumque similique quod at, repudiandae voluptates velit. Alias aliquam neque pariatur accusantium corrupti assumenda error quia, quasi commodi dolorum? Sint, magnam?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">MENDOZA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>
+            Mendoza Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quos illum quod saepe mollitia magni cumque molestias harum eius incidunt nobis soluta libero doloremque, minima ut corporis esse sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores atque minus alias dolore ut dignissimos deleniti velit a, doloremque temporibus at ex cumque. A dignissimos officiis quae eius fuga.
+        </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Modal 3-->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">PATAGONIA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>
+            Patagonia Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quos illum quod saepe mollitia magni cumque molestias harum eius incidunt nobis soluta libero doloremque, minima ut corporis esse sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores atque minus alias dolore ut dignissimos deleniti velit a, doloremque temporibus at ex cumque. A dignissimos officiis quae eius fuga.
+        </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">JUJUY</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>
+            Jujuy Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quos illum quod saepe mollitia magni cumque molestias harum eius incidunt nobis soluta libero doloremque, minima ut corporis esse sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores atque minus alias dolore ut dignissimos deleniti velit a, doloremque temporibus at ex cumque. A dignissimos officiis quae eius fuga.
+        </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Modal 5 -->
+<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">SALTA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>
+            Salta Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quos illum quod saepe mollitia magni cumque molestias harum eius incidunt nobis soluta libero doloremque, minima ut corporis esse sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores atque minus alias dolore ut dignissimos deleniti velit a, doloremque temporibus at ex cumque. A dignissimos officiis quae eius fuga.
+        </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Modal 6 -->
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">IGUAZÚ</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p>
+            Iguazú Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quos illum quod saepe mollitia magni cumque molestias harum eius incidunt nobis soluta libero doloremque, minima ut corporis esse sed.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores atque minus alias dolore ut dignissimos deleniti velit a, doloremque temporibus at ex cumque. A dignissimos officiis quae eius fuga.
+        </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+    </div>
+    </div>
+</div>
 
 <!-- Calculadora de gastos de viaje -->
         
@@ -192,7 +350,7 @@
 
                 <div class="box__footer">
                     <div class="logo">
-                        <img src="assets/img/logo.prueba.png" alt="">
+                        <img src="assets/favicon (3)logo.svg" alt="">
                     </div>
                     <div class="terms">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A.
@@ -237,11 +395,14 @@
             </div>
         </Footer>
     
+   
 
-
-        
+    <!-- <-- script bootstrap --> 
+    <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Archivos JS propios de la web -->
+    <script src="js/product.js"></script> 
     <script src="js/script.js"></script>
-
 </body>
 </html>
