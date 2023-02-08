@@ -649,6 +649,7 @@ hr{
     padding: 20px;
     font-weight: 700;
     padding-top: 1rem;
+    padding-bottom: 5rem;
 }
 
 .modal-content h3 {
@@ -689,6 +690,20 @@ hr{
     display: none;
 
 }
+
+/* BUTTON SUMA-RESTA */
+.restar{
+    cursor: pointer;  
+    padding-left: 20px;
+    font-size: 40px;
+    line-height: 40px;
+}
+.sumar{
+    cursor: pointer;
+    padding-left: 20px;  
+    font-size: 30px;
+    line-height: 40px;
+    }
 
 
 /* NEWSLETTER-FOOTER */

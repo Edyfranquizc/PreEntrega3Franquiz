@@ -61,7 +61,7 @@ productos.forEach((product)=> {
         console.log(carrito);
         console.log(carrito.length);
         carritoContador();
-        savelocal();
+        saveLocal();
 
         }  
     });
@@ -69,7 +69,7 @@ productos.forEach((product)=> {
 
 
 //set item
-const savelocal =() => {
+const saveLocal =() => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
