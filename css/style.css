@@ -260,7 +260,7 @@ a:hover{
 }
 
 
-/* FORMULARIO */
+/* SIMULADOR DE GASTOS */
 .titulo_form{
     margin: auto;
     text-align: center;
@@ -309,7 +309,7 @@ hr{
 
         form input[type=submit]{
             margin-top: 20px;
-            background-color:#327CB2;
+            background-color:#5f72cf;
         }
             
     form .btn-btn2 {
@@ -322,6 +322,9 @@ hr{
             border: none;
             cursor: pointer;
         }
+    form .btn-btn2:hover{
+        background-color: #3995d7;
+    } 
 
     .icons {
         width: 100%;
@@ -329,6 +332,7 @@ hr{
         justify-content: space-around;
         margin-top: 1rem;
         margin-bottom: 3rem;
+        padding-bottom: 1rem;
     
     }
     .fas {
@@ -353,7 +357,12 @@ hr{
     }
         
     .container-data h6 {
+            font-size: 25px;
+            color: #242424;
             text-align: center;
+            font-weight: 800;
+            padding-top: 0.5rem;
+            padding-bottom: 5rem;
     }
         
     .red {
@@ -682,8 +691,6 @@ hr{
 }
 
 
-
-    
 /* NEWSLETTER-FOOTER */
 .form-newsletter {
     max-width: 100%;
