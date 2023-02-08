@@ -22,38 +22,10 @@ h1{
     padding-right: 20px;
 }
 
-
-/* Buscador*/
-.filtro{
-    display: none;
-}
-
-#buscador{
-width: 35vw;
-}
-.btn-btn {
-    width: 25vw;
-    height: 50px;
-    text-transform: uppercase;
-    background:#327CB2;
-    color:rgb(255, 255, 255);
-    letter-spacing: 2px;
-    border-radius: 5px;
-    border: none;
+/* CARRITO */
+.ver-Carrito{
     cursor: pointer;
-}
-.btn-btn [type=submit]:hover{
-    background-color: #00fc3b;
-}
-
-@media screen and (max-width: 600px){
-    .btn-btn {
-        width: 20vw;
-        height: 50px;
-    }
-    .btn-btn [type=submit]:hover{
-        background-color: #00fc3b;
-    }
+    padding-right:20px ;
 }
 
 
@@ -281,15 +253,15 @@ width: 35vw;
     margin: auto;
     text-align: center;
     padding-top: 1rem;
-    color: #5f72cf;
+    color: #030f4d;
     
 }
-hr{
-    height: 1px;
-    margin: 80px;
-    margin-top: 1rem;
+ hr{
+    width: 80;
+    height: 2px;
+    margin: 50px;
     border: none;
-    background-color: #000000;
+    background-color: #041959;
 }
 
 #formulario {
@@ -586,6 +558,98 @@ hr{
         width: 30vw;
     }
     }
+
+/* MODAL CONTAINER */
+
+.modal-container{
+    width: 80%;
+    margin:0 10% ;
+    max-height: 85vh;
+    color: #fbfcfd;
+    background-color: #071952d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    /* for the top */
+    position:fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 10vh;
+    scrollbar-color: none;
+}
+
+.modal-container > h3{
+    font-weight: 900;
+}
+
+.modal-container ::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    width: 100%;
+    display: flex;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    justify-content:space-around;
+    background-color: #28418d;
+    color: #0b0b0b;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer; 
+    color: #ffffff;
+}
+
+.modal-container > .modadal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+.modal-container > div > img{
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 2rem;
+}
+
+.total-content{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.modal-content h3 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 1rem;
+}
+
+.modal-content p{
+    font-size: 25px;
+    font-weight: 900;
+    color: #92d9ff;
+    padding-left: 10px;
+    
+}
+
+/* ELIMINAR CARRITO BUTTON */
+
+.delete-producto {
+    cursor: pointer;
+}
+
 
 
     

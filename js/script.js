@@ -15,32 +15,6 @@ Swal.fire({
 })
 
 
-// En progreso 
-// document.addEventListener("keyup", e=>{
-
-//     if (e.target.matches("#buscador")){
-
-//         if (e.key ==="Escape")e.target.value = ""
-
-//         document.querySelectorAll(".description").forEach(lista =>{
-
-//             lista.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-//             ?lista.classList.remove("filtro")
-//             :lista.classList.add("filtro")
-//         })
-//     }
-
-// })
-
-// //Funcion para mostrar el buscador
-// function mostrar_buscador(){
-
-//     bars_search.style.top = "80px";
-//     cover_ctn_search.style.display = "block";
-//     inputSearch.focus();
-
-// }
-
 // Funcion para convertir las divisas
 function convertir() {
     let valor = parseFloat(document.getElementById("cantidad").value);
@@ -177,51 +151,29 @@ productos.forEach((product)=> {
     content.append(comprar);
 
     comprar.addEventListener("click", () =>{
+
+    const repeat =carrito.some((repeatProduct) => repeatProduct.id === product.id);
+    
+    if (repeat) {
+        carrito.map((prod) => {
+            if (prod.id === product.id){
+            prod.cantidad ++;
+            }
+        })
+    }
         carrito.push({
         id : product.id,
         img : product.img,
         nombre: product.nombre,
         precio: product.precio,
+        cantidad: product.cantidad,
         });
         console.log(carrito);
     });
 });
 
-verCarrito.addEventListener("click", () => {
-    const modalHeader = document.createElement("div");
 
-    modalHeader.className = "modal-header";
-    modalHeader.innerHTML = `
-    <h1 class="modal-header-title"> Carrito. </h1>
-    `;
-    modalContainer.append(modalHeader);
 
-    const modalbutton = document.createElement("h1");
-    modalbutton.innerText = "x";
-    modalbutton.className = "modal-header-button";
-
-    modalHeader.append(modalbutton);
-
-    carrito.forEach((product) => {
-        let carritoContent = createElement("div");
-        carrito.className = "modal-content"
-        carrito.innerHTML = `
-        <img src="${product.img}">
-        <h3>${product.nombre}</h3>
-        <p>${product.precio} $</p>
-        `;
-
-        modalContainer.append(carritoContent);
-    });
-
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
-    const totalBuying = createElement("div");
-    totalBuying.className = "total-content";
-    totalBuying.innerHTML = `total a pagar: ${total} $
-    modalContainer.append(totalBuying)
-    `;
-
-});
 
 
 
