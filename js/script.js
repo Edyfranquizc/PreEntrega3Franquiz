@@ -127,6 +127,7 @@ vacationCalc.addEventListener('submit', calcExpenses)
 const shopContend = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modalContainer");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 
 let carrito =[];
@@ -168,6 +169,7 @@ productos.forEach((product)=> {
     }
         
         console.log(carrito);
+        carritoContador();
     });
 });
 

@@ -15,6 +15,14 @@ h1{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+a{
+    color: #0b0b0b;
+}
+
+a:hover{
+    color: #3995D7;
+}
+
 .navbar{
     width: 100vw;
     padding: 10px;
@@ -243,9 +251,13 @@ h1{
 
 @media screen and (max-width: 600px) {
     .card .description input{
-        width: 30vw;
+        width: 50vw;
     }
     }
+
+.modal-title{
+    color: #efe6ff;
+}
 
 
 /* FORMULARIO */
@@ -256,7 +268,7 @@ h1{
     color: #030f4d;
     
 }
- hr{
+hr{
     width: 80;
     height: 2px;
     margin: 50px;
@@ -615,10 +627,11 @@ h1{
     margin: 10px;
 }
 .modal-container > div > img{
-    width: 200px;
-    height: 200px;
-    padding-left: 10px;
+    width: 160px;
+    height: 160px;
+    padding-left: 20px;
     padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .total-content{
@@ -632,22 +645,40 @@ h1{
 .modal-content h3 {
     font-size: 25px;
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 30px;
 }
 
 .modal-content p{
-    font-size: 25px;
-    font-weight: 900;
-    color: #92d9ff;
-    padding-left: 10px;
+    font-size: 20px;
+    padding-left: 20px;
     
 }
 
 /* ELIMINAR CARRITO BUTTON */
 
-.delete-producto {
+.delete-product {
     cursor: pointer;
+    padding-bottom: 3rem;
+    padding-left: 20px;
+    
+}
+
+/* CARRITO-CONTADOR */
+
+.cantidad-carrito{
+    background-color: #042efe;
+    color: #efe6ff;
+    border-radius: 30%;
+    font-size: 15px;
+    padding: 4px;
+    top:37px;
+    right: 25px;
+    position: absolute;
+    display: none;
+
 }
 
 

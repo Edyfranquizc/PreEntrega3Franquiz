@@ -25,20 +25,21 @@
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p>${product.precio} $</p>
-        <hr>
         <p>Cantidad: ${product.cantidad}</p>
-        
+        <p>Total: ${product.cantidad * product.precio}</p>
         `;
 
         modalContainer.append(carritoContent);
 
         let eliminar = document.createElement("span");
         eliminar.innerText = "❌";
-        eliminar.className = "delete-producto";
+        eliminar.className = "delete-product";
         carritoContent.append(eliminar);
+
+        eliminar.addEventListener("click", eliminarProducto);
     });
 
-    const total = carrito.reduce((acc , el,) => acc += el.precio, 0);
+    const total = carrito.reduce((acc , el,) => acc += el.precio * el.cantidad,  0);
     console.log(total);
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
@@ -58,6 +59,11 @@ const eliminarProducto = () => {
     });
 
     pintarCarrito();
+};
+
+const carritoContador = () => {
+    cantidadCarrito.style.display = "block";
+    cantidadCarrito.innerText = carrito.length;
 };
 
 
