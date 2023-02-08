@@ -123,9 +123,6 @@ vacationCalc.addEventListener('submit', calcExpenses)
     }
 
 
-
-
-
 // carrito 
 const shopContend = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
@@ -160,14 +157,16 @@ productos.forEach((product)=> {
             prod.cantidad ++;
             }
         })
-    }
+    } else{
         carrito.push({
-        id : product.id,
-        img : product.img,
-        nombre: product.nombre,
-        precio: product.precio,
-        cantidad: product.cantidad,
-        });
+            id : product.id,
+            img : product.img,
+            nombre: product.nombre,
+            precio: product.precio,
+            cantidad: product.cantidad,
+            });
+    }
+        
         console.log(carrito);
     });
 });
