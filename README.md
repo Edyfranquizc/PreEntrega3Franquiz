@@ -5,4 +5,4 @@ JS Simulador Interactivo
 La página web consiste en un convertidor de divisas
 
 Link de la página web
-👉 https://edyfranquizc.github.io/PreEntrega2Franquiz/
+👉 https://edyfranquizc.github.io/PreEntrega3Franquiz/

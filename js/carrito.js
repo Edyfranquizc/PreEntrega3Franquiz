@@ -38,7 +38,8 @@
         carritoContent.append(eliminar);
     });
 
-    const total = carrito.reduce((acc , el,) => acc + el.precio, 0);
+    const total = carrito.reduce((acc , el,) => acc += el.precio, 0);
+    console.log(total);
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `total a pagar: ${total} $ `;
