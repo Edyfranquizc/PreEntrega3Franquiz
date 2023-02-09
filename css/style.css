@@ -42,7 +42,7 @@ a:hover{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: rgba(22, 133, 122, 0.701);
+    background-color: rgba(22, 133, 122, 0.876);
     background-size: cover;
     background-position: center center;
     background-image: url("https://media.traveler.es/photos/6137759e6936668f30c3f542/master/pass/112126.jpg");
@@ -798,8 +798,9 @@ footer{
     width: 100%;
     padding: 60px 0px;
     font-family: 'Nunito', sans-serif;
-    background-color: #84c5fec6;
-    background-image: url("https://media.istockphoto.com/id/817147624/es/vector/fondo-de-paisaje-de-invierno-vector-de.jpg?s=170667a&w=0&k=20&c=gRFQ1I_aaF6k1ZFSpZhVKFIUJTYEVVLG60JBBdozeqg=");
+    background-position: center center;
+    background-color: #327db2f1;
+    background-image: url("https://st2.depositphotos.com/1006362/10147/i/450/depositphotos_101472148-stock-photo-northern-argentina-landscapes.jpg");
     background-size: cover;
     scroll-margin: 60ex;
 
@@ -809,7 +810,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
+    max-height: 100%;
     margin: auto;
     padding-top: 100px;
 }
@@ -828,20 +830,20 @@ footer{
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
-    color: #444444;
+    color: #fffefe;
     font-size: 18px;
 
 }
 
 .box__footer h2{
     margin-bottom: 30px;
-    color: #242424;
+    color: #ffffff;
     font-weight: 700;
 }
 
 .box__footer a{
     margin-top: 10px;
-    color: #5a5a5a;
+    color: #6ec7ff;
     font-weight: 600;
     text-decoration: none;
 }
@@ -849,7 +851,7 @@ footer{
 .box__footer a:hover{
     opacity: 0.8;
     text-decoration: none;
-    color: #002aff;
+    color: #ffffffd1;
 }
 
 .box__footer a .fab{
@@ -866,14 +868,11 @@ footer{
 
 .box__copyright p{
     margin-top: 20px;
-    color: #333333;
+    color: #ffffffdf;
 }
 
-.box__copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #000000;
-}
+
+
 
 
 
