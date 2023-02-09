@@ -798,8 +798,8 @@ footer{
     width: 100%;
     padding: 60px 0px;
     font-family: 'Nunito', sans-serif;
-    *background-color: var(--color-esqueleto);
-    background-image: url("/assets/pexels-zain-ali-5213518.jpg");
+    background-color: #84c5fec6;
+    background-image: url("https://media.istockphoto.com/id/817147624/es/vector/fondo-de-paisaje-de-invierno-vector-de.jpg?s=170667a&w=0&k=20&c=gRFQ1I_aaF6k1ZFSpZhVKFIUJTYEVVLG60JBBdozeqg=");
     background-size: cover;
     scroll-margin: 60ex;
 
