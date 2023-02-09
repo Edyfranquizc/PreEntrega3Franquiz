@@ -71,31 +71,22 @@ a:hover{
     color: #ecfbfdc1;
     }
     
-    /* .banner-content a {
-    text-decoration: none;
-    color: white;
-    background-color: rgba(27, 134, 11, 0.864);
-    padding: 20px;
-    border-radius: 45px;
-    border: 1px solid #ffffff;
-    text-transform: uppercase;
-    transition: all 0.4s ease-in-out;
-    }
-    
-    .banner-content a:hover {
-    background-color: #FFF8EA;
-    color: #402E32;
-    }
-    
-     */
-    @media screen and (max-width: 600px) {
-    .banner-content .banner-titulo {
+    .happy{
         font-size: 50px;
     }
-    .cafe {
-        font-size: 70px;
+    
+
+    @media screen and (max-width: 600px) {
+        .banner-content .banner-titulo {
+            font-size: 40px;
+        }
+        .happy {
+            font-size: 30px;
+        }
     }
-    }
+
+    
+
 
 
 /*Portada*/
@@ -248,12 +239,40 @@ a:hover{
     background: #1bd0ca;
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
+    .card{
+        width: 50%;
+    }
     .card .description input{
         width: 50vw;
     }
+
+    .card .description button{
+        width: 15vh;
     }
+    .card .cover img{
+        width: 500px;
+    }
+
+    }
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 70%;
+    }
+    .card .description input{
+        width: 50vw;
+    }
+
+    .card .description button{
+        width: 15vh;
+    }
+    .card .cover img{
+        width: 240px;
+    }
+
+    }
+
 
 .modal-title{
     color: #efe6ff;
@@ -575,8 +594,17 @@ hr{
 
 
 @media screen and (max-width: 600px) {
+    .card_tienda{
+        width: 200px;
+    }
     .card_tienda .description{
         width: 30vw;
+    }
+    .card_tienda .cover {
+        width: 180px;
+    }
+    .card_tienda button{
+        width: 25vw;
     }
     }
 
