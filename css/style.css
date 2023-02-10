@@ -9,6 +9,10 @@
     text-decoration: none;
     font-family:Roboto, sans-serif;
 }
+
+body{
+    width: 100%;
+}
 h1{
     font-size: 30px;
     text-align: center;
@@ -23,6 +27,7 @@ a{
 a:hover{
     color: #3995D7;
 }
+
 
 .navbar{
     width: 100vw;
@@ -78,6 +83,9 @@ a:hover{
     
 
     @media screen and (max-width: 600px) {
+        .banner{
+            width: 100%;
+        }
         .banner-content .banner-titulo {
             font-size: 40px;
         }
@@ -250,6 +258,7 @@ a:hover{
     }
     .card .cover img{
         width: 500px;
+        padding: 0;
     }
 
     }
