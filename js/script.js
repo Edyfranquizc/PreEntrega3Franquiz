@@ -5,14 +5,15 @@
 //     alert (`Hola ${nombre}!`);
 // }
 
-// seweet
 Swal.fire({
     icon: 'susses',
     title: 'Bienvenidos',
     text: 'Happy Jouney!',
     footer: 'Hoy es un buen día para planificar tú viaje',
-    confirmButtonColor:'#327CB2', 
-})
+    color:'#ffffff',
+    background:'#6eabd0e0',
+    confirmButtonColor:'#5f72cf', 
+    })
 
 // carrito 
 const shopContend = document.getElementById("shopContent");
@@ -62,7 +63,18 @@ productos.forEach((product)=> {
         console.log(carrito.length);
         carritoContador();
         saveLocal();
-
+        // seweet
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title:' Su compara ha sido agregada al carrito',
+            // text: 'La Cámara ha sido agregada',
+            color:'#ffffff',
+            background:'#6eabd0e0',
+            position:'top-end',
+            showConfirmButton: false,
+            timer: 2000,
+        })
         }  
     });
 });
