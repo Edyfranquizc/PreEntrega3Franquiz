@@ -1,10 +1,3 @@
-// alert ('BIENVENIDO!!');
-// const seguro = confirm ('Deseas que te salude por tu nombre');
-// if (seguro) {
-//     const nombre = prompt ('Cuál es tu nombre?');
-//     alert (`Hola ${nombre}!`);
-// }
-
 Swal.fire({
     icon: 'susses',
     title: 'Bienvenidos',
@@ -15,7 +8,7 @@ Swal.fire({
     confirmButtonColor:'#5f72cf', 
     })
 
-// carrito 
+// Tienda- carrito 
 const shopContend = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modalContainer");
@@ -31,7 +24,6 @@ productos.forEach((product)=> {
     <h3 class"description">${product.nombre}</h3>
     <p class="price">${product.precio} $</p>
     `;
-
     shopContend.append(content);
 
     let comprar = document.createElement("button");
@@ -89,71 +81,7 @@ const saveLocal =() => {
 
 JSON.parse(localStorage.getItem("carrito"));
 
-// Formulario de viaje
 
-let vacationCalc = document.getElementById('vacationCalc')
-
-vacationCalc.addEventListener('submit', calcExpenses)
-
-    function getValues() {
-    let destiny = document.getElementById('destiny').value,
-        budget = document.getElementById('budget').value,
-        transport = document.getElementById('transport').value,
-        acomodation = document.getElementById('acomodation').value,
-        food = document.getElementById('food').value
-
-    return { destiny, budget, acomodation, transport, food }    
-    }
-
-    function calcExpenses(e) {
-    e.preventDefault();
-    
-    const  { destiny, budget, acomodation, transport,  food } = getValues()
-
-    let expenses = parseInt(acomodation) + parseInt(transport) + parseInt(food)
-    let balance = budget - expenses
-
-    UI(destiny, budget, balance)
-    }
-
-    function UI(destiny, budget, balance) {
-    let result = document.getElementById('result')
-    let dataPrint = document.createElement('div')
-    
-    dataPrint.innerHTML += `
-        <div class="container-data row">
-        <div class="col s4">
-            <h6>${destiny}</h6>
-        </div>
-        <div class="col s4">
-            <h6>${budget}</h6>
-        </div>
-        <div class="col s4">
-            <h6 id="balance"><strong>${balance}</strong></h6> 
-        </div>
-        </div>
-    `
-    result.appendChild(dataPrint) 
-
-    reset()
-    }
-
-    function reset() {
-    document.getElementById('vacationCalc').reset()
-    }
-
-    function balanceColours() {
-
-    const { balance} = getValues()
-
-
-        if(balance < 0) {
-        document.getElementById('balance').classList.add('red')
-        }
-        else if(balance > 0) {
-        document.getElementById('balance').classList.add('green')
-        }657
-    };
 
 
 

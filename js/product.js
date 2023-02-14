@@ -37,7 +37,7 @@ const productos = [
     {
         id: 6,
         nombre:"Cámara de video Insta360 X3 5.7K black",
-        precio: 299.000,
+        precio: 299000,
         img:"./assets/insta360X3.jpg",
         cantidad: 1 ,
     },
