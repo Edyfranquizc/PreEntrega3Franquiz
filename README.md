@@ -4,4 +4,4 @@ JS Simulador Interactivo
 
 
 Link de la página web ✈️ Happy Journey
-👉 https://edyfranquizc.github.io/PreEntrega3Franquiz/
+👉 https://thehappyjourney.netlify.app/

@@ -14,7 +14,6 @@ const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modalContainer");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
-
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 productos.forEach((product)=> {
     let content = document.createElement("div");
@@ -32,8 +31,9 @@ productos.forEach((product)=> {
 
     content.append(comprar);
 
-    comprar.addEventListener("click", () =>{
 
+    comprar.addEventListener("click", () =>{
+    
     const repeat =carrito.some((repeatProduct) => repeatProduct.id === product.id);
     
     if (repeat) {
@@ -49,8 +49,8 @@ productos.forEach((product)=> {
             nombre: product.nombre,
             precio: product.precio,
             cantidad: product.cantidad,
-            });
-
+            }); 
+        
         console.log(carrito);
         console.log(carrito.length);
         carritoContador();
@@ -60,7 +60,7 @@ productos.forEach((product)=> {
             position: 'top-end',
             icon: 'success',
             title:' Su compara ha sido agregada al carrito',
-            // text: 'La Cámara ha sido agregada',
+            text: 'La Cámara ha sido agregada',
             color:'#ffffff',
             background:'#6eabd0e0',
             position:'top-end',

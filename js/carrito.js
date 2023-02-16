@@ -30,6 +30,7 @@
         <span class="sumar"> + </span>
         <p>Total: ${product.cantidad * product.precio}</p>
         <span class="delete-product"> ❌ </span>
+        <button class="finishButton">Finalizar Compra</button>
         `;
 
         modalContainer.append(carritoContent);
@@ -57,7 +58,13 @@
             eliminarProducto(product.id);
         })
 
+        // let cerrar = carritoContent.querySelector(".finishButton");
+        // cerrar.addEventListener("click", () =>{
+        // finalizarCompra(product.id);
+        // })
+    
     });
+
 
     const total = carrito.reduce((acc , el,) => acc += el.precio * el.cantidad,  0);
     console.log(total);
@@ -66,6 +73,7 @@
     totalBuying.innerHTML = `Total a Pagar: ${total} $ `;
     modalContainer.append(totalBuying);
 };
+
 
 
 verCarrito.addEventListener("click", pintarCarrito);
@@ -94,6 +102,7 @@ const carritoContador = () => {
 };
 
 carritoContador();
+
 
 
 
