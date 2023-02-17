@@ -58,10 +58,10 @@
             eliminarProducto(product.id);
         })
 
-        // let cerrar = carritoContent.querySelector(".finishButton");
-        // cerrar.addEventListener("click", () =>{
-        // finalizarCompra(product.id);
-        // })
+        let cerrar = carritoContent.querySelector(".finishButton");
+        cerrar.addEventListener("click", () =>{
+        finalizarCompra(product.id);
+        })
     
     });
 
@@ -78,6 +78,48 @@
 
 verCarrito.addEventListener("click", pintarCarrito);
 
+const finalizarCompra = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
+
+    carrito = carrito.filter((carritoId) => {
+        return carritoId !== foundId;
+    });
+    Swal.fire({
+        title: 'Está seguro de finalizar su compra',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, si quiero',
+        cancelButtonText: 'No, no quiero',
+        color:'#ffffff',
+        background:'#003B5A',
+        confirmButtonColor: '#00A0F3',
+        cancelButtonColor: 'rgb(191, 68, 68)',
+    }).then((result)=>{
+        if(result.isConfirmed){
+            Swal.fire({
+                title: 'Compra realizada',
+                icon: 'success',
+                confirmButtonColor: ' #5f72cf',
+                text: 'Muchas gracias por su compra. Vuelva pronto!',
+                color:'#ffffff',
+                background:'#003B5A',
+                })
+        }else{
+            Swal.fire({
+                title: 'Compra no realizada',
+                icon: 'warning',
+                text: `La compra no ha sido realizada! Atención sus productos siguen en el carrito`,
+                confirmButtonColor: ' #5f72cf',
+                color:'#ffffff',
+                background:'#003B5A',
+                timer:4000
+            })
+        }
+    }
+
+    )
+
+};
 
 const eliminarProducto = (id) => {
     const foundId = carrito.find((element) => element.id === id);

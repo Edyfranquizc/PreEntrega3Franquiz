@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/assets/favicon (3)logo.svg"> 
     <link rel="stylesheet" href="css/style.css">
     <title>
-        Happy Journey
+        the Happy Journey
     </title> 
 </head>
 <body>
@@ -84,7 +84,7 @@
 
 <!-- Tienda content -->
     <div class="titulo_tienda"> 
-        <h1> ENCUENTRA TU CÁMARA FAVORITA </h1>
+        <h1> ENCUENTRA TU CÁMARA <span class="favorita">FAVORITA</span></h1>
     </div>
     <div id="shopContent" class="shopContent">    
     </div>  
@@ -92,8 +92,7 @@
 
     <!-- Modal-carrito -->
 
-    <div id="modalContainer" class="modal-container">
-        <!-- <button type="button" id="finalizarCompra" class="finishButton">Finalizar Compra</button> -->
+    <div id="modalContainer" class="modal-container">   
     </div>
 
     
@@ -317,7 +316,7 @@
         
         <div id="planifica" class="titulo_form">
             <hr>
-            <h1>Calcula tu Viaje</h1>
+            <h1>Calcula tu <span class="viaje">Viaje</span></h1>
         </div>
             <div id="formulario">
                     <form id="vacationCalc">
@@ -347,7 +346,24 @@
                         </div> 
                     </div>
 
-        
+<!-- contacto -->
+<hr>
+<h1 class="logo">Comunícate con <span>Nosotros</span></h1>
+    <div class="form">
+        <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+            <h2 class="contactanos"> CONTACTANOS </h2>
+            <input type="text" class="formulario" placeholder="Nombre">
+            <input type="text" class="formulario" placeholder="Apellido">
+            <input type="text" class="formulario" placeholder="Email">
+            <input type="number" class="formulario" placeholder="telefono">
+            <textarea placeholder="Mensaje" class="formulario"></textarea>
+            <input type="submit" value="Enviar">
+        </div>
+        </div>
+    </div>
+            
     <!-- Footer -->
         <Footer>
             <div id="container__footer">
@@ -360,37 +376,38 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis et quasi aut facere vitae vero. Inventore, minus ab voluptate modi repellat, pariatur tempora quisquam, debitis facilis explicabo voluptatem. A.
                     </div>
                 </div>
-                    <div class="box__footer">
-                        <div class="form-newsletter">
-                            <h3> NEWSLETTER </h3>
-                                <form id="form" action="#">
-                                <input
-                                type="email"
-                                placeholder="Email"
-                                name="email"
-                                id="email"
-                                required/>
-                                <input id="submit" type="submit" value="Enviar"/>
-                                </form>
-                        </div>
+                <div class="box__footer">
+                    <div class="form-newsletter">
+                        <h3> NEWSLETTER </h3>
+                            <form id="form" action="#">
+                            <input
+                            type="email"
+                            placeholder="Email"
+                            name="email"
+                            id="email"
+                            required/>
+                            <input id="submit" type="submit" value="Enviar"/>
+                            </form>
                     </div>
-
-                <div class="box__footer">
-                    <h2>COMPAÑIA</h2>
-                    <a href="#">Acerca de</a>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Procesos</a>
-                    <a href="#">Servicios</a>              
                 </div>
 
-                <div class="box__footer">
-                    <h2>REDES SOCIALES</h2>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a href="https://www.twitter.com/"><i class="fab fa-twitter-square"></i> Twitter</a>
-                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin</a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
-                </div>
+            <div class="box__footer">
+                <h2>COMPAÑIA</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>              
             </div>
+
+            <div class="box__footer">
+                <h2>REDES SOCIALES</h2>
+                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+                
 
             <div class="box__copyright">
                 <p>Todos los derechos reservados © 2022 
@@ -411,3 +428,19 @@
     <script src="./js/simuladores.js"></script>
 </body>
 </html>
+
+<!-- <div class="box__footer">
+    <h2>CONTACTO</h2>
+    <ul>
+    <li>
+        <i class="fa-sharp fa-solid fa-location-dot"> Buenos Aires Argentina, Loc. Retiro 945, 1er. Piso </i>
+    </li>
+    <li>
+        <i class="fa-sharp fa-solid fa-phone"> +54 9 11 59746527 </i>
+    </li>
+    <li>
+        <i class="fa-sharp fa-regular fa-envelope"> thehappyjourney@website.com </i>
+    </li>
+</ul>
+    
+</div> -->
