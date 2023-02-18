@@ -1,3 +1,4 @@
+//SweetAlert Bienvenida
 Swal.fire({
     icon: 'susses',
     title: 'Bienvenidos',
@@ -7,6 +8,12 @@ Swal.fire({
     background:'#6eabd0e0',
     confirmButtonColor:'#5f72cf', 
     })
+//Luxon fecha y hora 
+const DateTime = luxon.DateTime
+const fechaHoy = DateTime.now()
+let fecha = document.getElementById("fecha_hora")
+let fechaMostrar = fechaHoy.toLocaleString(DateTime.DATETIME_MED)
+fecha.innerHTML = `${fechaMostrar}`
 
 // Tienda- carrito 
 const shopContend = document.getElementById("shopContent");
@@ -55,7 +62,7 @@ productos.forEach((product)=> {
         console.log(carrito.length);
         carritoContador();
         saveLocal();
-        // seweet
+        // sweet aviso agregando el producto al carrito
         Swal.fire({
             position: 'top-end',
             icon: 'success',

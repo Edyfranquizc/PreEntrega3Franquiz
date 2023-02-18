@@ -84,6 +84,7 @@ const finalizarCompra = (id) => {
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
     });
+    // sweet botón aviso de finalizar compra
     Swal.fire({
         title: 'Está seguro de finalizar su compra',
         icon: 'question',
