@@ -3,11 +3,14 @@
 
 *{
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family:Roboto, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -40,6 +43,7 @@ a:hover{
 
 
 @media screen and (max-width: 600px) {
+ 
     .navbar img{
         width: 80%;
     }
@@ -782,8 +786,15 @@ hr{
     font-size: 16px;
     
 }
+.finishButton {
+    width: 30vw;
+}
     }
 
+/* .barraDeCotizacion{
+    width: 100%;
+    background-color: #030f4d;
+} */
 
 /* ELIMINAR CARRITO BUTTON */
 
