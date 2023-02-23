@@ -43,7 +43,6 @@ a:hover{
 
 
 @media screen and (max-width: 600px) {
- 
     .navbar img{
         width: 80%;
     }
@@ -454,7 +453,7 @@ hr{
         .formulario  {
             width: 1000px;
             max-width: 100%;
-            font-size: 20px;
+            font-size: 18px;
         }
         form {
             text-align: center;
@@ -464,15 +463,31 @@ hr{
         form input::placeholder {
             width: 100%;
             margin-top: 1rem;
-            padding: 25px;
+            padding: 5px;
             padding-top: 1rem;
             padding-bottom: 1rem;
     
             }
-            form .btn-btn2 {
+            input.btn-btn2 {
                 width: 30vw;
                 height: 40px;
             }
+            input#destiny{
+                width: 100%;
+            }
+            input#budget{
+                width: 100%;
+            }
+            input#acomodation{
+                width: 100%;
+            }
+            input#transport{
+                width: 100%;
+            }
+            input#food{
+                width: 100%;
+            }
+            
         }
         @media screen and (max-width: 1500px){
                 form .btn-btn2 {
