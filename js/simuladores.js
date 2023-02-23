@@ -71,8 +71,8 @@ function convertir() {
     document.getElementById("valor").innerHTML="<b>"+valor+"</b>";
     de=document.getElementById("de").value;
     a=document.getElementById("a").value;
-    let dolar=178.36;
-    let euro=188.30;
+    let dolar=194.97;
+    let euro=207.10 ;
     resultado=0;
     // peso a Dolar
     if(de==1&&a==2){
