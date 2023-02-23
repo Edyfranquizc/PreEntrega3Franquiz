@@ -59,6 +59,7 @@ a:hover{
 .barraDeCotizacion{
     width: 100%;
     padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #030f4d;
     color: #e8f1ff;
 }
