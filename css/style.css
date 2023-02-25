@@ -43,8 +43,19 @@ a:hover{
 
 
 @media screen and (max-width: 600px) {
+    .navbar{
+        min-width: 90%;
+        margin: auto;
+        padding: 0%;
+        padding-right: 40px;
+    }
     .navbar img{
-        width: 80%;
+        max-width: 70%;
+        padding: 0%;
+        margin: auto;
+    }
+    .navbar-toggler-icon{
+        min-width: 50%;
     }
 }
 
@@ -70,7 +81,7 @@ a:hover{
 
 @media screen and (max-width: 600px) {
     .barraDeCotizacion{
-        width: 100%;
+        min-width: 100%;
     }
     .barraDeCotizacion h6{
         font-size: small;
@@ -869,6 +880,7 @@ hr{
     display: none;
 
 }
+
 
 /* BUTTON SUMA-RESTA */
 .restar{
