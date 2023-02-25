@@ -65,6 +65,9 @@ a:hover{
     text-align: center;
 
     }
+    .container-fluid{
+        max-width: 90%;
+    }
 }
 
 
@@ -99,6 +102,7 @@ a:hover{
     .barraDeCotizacion{
         max-width: 100%;
         padding-top: 11rem;
+        flex-direction: column;
     }
     .barraDeCotizacion h6{
         font-size: small;
@@ -731,6 +735,9 @@ hr{
 
 
 @media screen and (max-width: 600px) {
+    .shopContent{
+        flex-direction: column;
+    }
     .card_tienda{
         width: 200px;
     }
@@ -902,7 +909,7 @@ hr{
 @media screen and (max-width: 600px) {
     .cantidad-carrito{
         margin: 4.9rem;
-        right: -40px;
+        right: -30px;
         
     } 
         }
@@ -1080,6 +1087,7 @@ hr{
     @media screen and (max-width: 600px) {
     .contact-box {
         grid-template-columns: 1fr;
+
     }
     .left {
         width: 50%;
