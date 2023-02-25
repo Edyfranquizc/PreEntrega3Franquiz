@@ -852,6 +852,9 @@ hr{
 .modal-container{
     width: 75%;
 }
+.modal-header{
+    padding-top: 6rem;
+}
 .modal-container > div > img{
     width: 140px;
     height: 140px;
@@ -898,7 +901,9 @@ hr{
 }
 @media screen and (max-width: 600px) {
     .cantidad-carrito{
-        right: 40px;
+        margin: 4.9rem;
+        right: -40px;
+        
     } 
         }
 
