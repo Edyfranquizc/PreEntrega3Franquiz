@@ -13,6 +13,7 @@ body{
     padding: 0;
 }
 
+
 h1{
     font-size: 30px;
     text-align: center;
@@ -44,18 +45,25 @@ a:hover{
 
 @media screen and (max-width: 600px) {
     .navbar{
-        min-width: 90%;
+        width: 100%;
         margin: auto;
-        padding: 0%;
-        padding-right: 40px;
+        padding-right: 50px;
+        padding-top: 2.7rem;
+        padding-bottom: 1rem;
+        
     }
     .navbar img{
-        max-width: 70%;
+        min-width: 70%;
         padding: 0%;
+        padding-right: 30px;
         margin: auto;
     }
     .navbar-toggler-icon{
         min-width: 50%;
+    }
+    #navbarSupportedContent{
+    text-align: center;
+
     }
 }
 
@@ -64,6 +72,14 @@ a:hover{
 .ver-Carrito{
     cursor: pointer;
     padding-right:20px ;
+}
+
+@media screen and (max-width: 600px) {
+    .ver-Carrito{
+        width: 100%;
+        margin: auto;
+        padding-left:25px ;
+    }
 }
 
 /* BARRA DE COTIZACIÓN */
@@ -81,7 +97,8 @@ a:hover{
 
 @media screen and (max-width: 600px) {
     .barraDeCotizacion{
-        min-width: 100%;
+        max-width: 100%;
+        padding-top: 9rem;
     }
     .barraDeCotizacion h6{
         font-size: small;
@@ -878,9 +895,12 @@ hr{
     right: 25px;
     position: absolute;
     display: none;
-
 }
-
+@media screen and (max-width: 600px) {
+    .cantidad-carrito{
+        right: 40px;
+    } 
+        }
 
 /* BUTTON SUMA-RESTA */
 .restar{
