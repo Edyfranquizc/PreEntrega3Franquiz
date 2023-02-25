@@ -48,12 +48,12 @@ a:hover{
         width: 100%;
         margin: auto;
         padding-right: 50px;
-        padding-top: 2.7rem;
-        padding-bottom: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
         
     }
     .navbar img{
-        min-width: 70%;
+        min-width: 80%;
         padding: 0%;
         padding-right: 30px;
         margin: auto;
@@ -98,7 +98,7 @@ a:hover{
 @media screen and (max-width: 600px) {
     .barraDeCotizacion{
         max-width: 100%;
-        padding-top: 9rem;
+        padding-top: 11rem;
     }
     .barraDeCotizacion h6{
         font-size: small;
