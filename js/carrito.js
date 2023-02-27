@@ -62,7 +62,6 @@
         cerrar.addEventListener("click", () =>{
         finalizarCompra(product.id);
         })
-    
     });
 
 
