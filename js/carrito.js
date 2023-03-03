@@ -103,7 +103,7 @@ const finalizarCompra = (id) => {
                 text: 'Muchas gracias por su compra. Vuelva pronto!',
                 color:'#ffffff',
                 background:'#003B5A',
-                })
+                })       
         }else{
             Swal.fire({
                 title: 'Compra no realizada',

@@ -333,7 +333,7 @@ a:hover{
     background: #1bd0ca;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 900px) {
     .card{
         width: 50%;
     }
